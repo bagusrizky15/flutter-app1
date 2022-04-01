@@ -9,13 +9,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          child: Text("Halo"),
+          child: Text(
+            "Nama saya Bagus",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 24,
+            ),
+          ),
         ),
         appBar: AppBar(
-          title: Text("My First App"),
+          title: Text("Aplikasi pertama saya"),
         ),
       ),
     );
