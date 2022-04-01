@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
             "Nama saya Bagus",
             textAlign: TextAlign.center,
             style: TextStyle(
+              fontFamily: 'Poppins',
               fontSize: 24,
             ),
           ),
