@@ -5,24 +5,8 @@ void main(List<String> args) {
 }
 
 class MyApp extends StatelessWidget {
-  List<Widget> myList = [
-    Container(
-      width: 200,
-      height: 200,
-      color: Colors.blue,
-    ),
-    Text("Anjay"),
-    Container(
-      width: 200,
-      height: 200,
-      color: Colors.red,
-    ),
-    Container(
-      width: 200,
-      height: 300,
-      color: Colors.amber,
-    ),
-  ];
+  List<Color> myColor = [Colors.blue, Colors.red, Colors.amber];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,9 +14,13 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("ListView"),
         ),
-        body: ListView(
-          scrollDirection: Axis.vertical,
-          children: myList,
+        body: ListView.builder(
+          itemCount: 3,
+          itemBuilder: (context, index) => Container(
+            height: 300,
+            width: 300,
+            color: myColor[index],
+          ),
         ),
       ),
     );
