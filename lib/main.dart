@@ -15,8 +15,13 @@ class MyApp extends StatelessWidget {
         body: ListView(
           children: [
             ListTile(
+              contentPadding: EdgeInsets.all(20),
               title: Text("Saeful"),
-              subtitle: Text("this is subtitle"),
+              subtitle: Text(
+                "this is subtitle kdsahhdsadkjakdnsadjnjsdahjdhsajjsdajdhajsdhaj",
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              ),
               leading: CircleAvatar(),
               trailing: Text("10.00 PM"),
             )
