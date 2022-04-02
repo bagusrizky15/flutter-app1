@@ -12,6 +12,15 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("hola"),
         ),
+        body: ListView(
+          children: [
+            ListTile(
+              title: Text("Saeful"),
+              subtitle: Text("this is subtitle"),
+              leading: CircleAvatar(),
+            )
+          ],
+        ),
       ),
     );
   }
