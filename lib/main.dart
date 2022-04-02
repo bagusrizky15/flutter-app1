@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
               title: Text("Saeful"),
               subtitle: Text("this is subtitle"),
               leading: CircleAvatar(),
+              trailing: Text("10.00 PM"),
             )
           ],
         ),
