@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         body: ListView(
           children: [
             ListTile(
-              contentPadding: EdgeInsets.all(20),
+              contentPadding: EdgeInsets.symmetric(horizontal: 20),
               title: Text("Saeful"),
               subtitle: Text(
                 "this is subtitle kdsahhdsadkjakdnsadjnjsdahjdhsajjsdajdhajsdhaj",
