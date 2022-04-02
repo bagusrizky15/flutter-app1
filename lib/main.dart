@@ -6,28 +6,23 @@ void main(List<String> args) {
 }
 
 class MyApp extends StatelessWidget {
-  List<Color> myColor = [Colors.blue, Colors.green, Colors.amber];
+  final List<Widget> myList = List.generate(
+    100,
+    (index) => Text(
+      index.toString(),
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("ListView"),
-        ),
-        body: ListView.separated(
-          separatorBuilder: (context, index) => Container(
-            height: 50,
-            color: Colors.black,
+          appBar: AppBar(
+            title: Text("ListView"),
           ),
-          itemCount: myColor.length,
-          itemBuilder: (context, index) => Container(
-            height: 300,
-            width: 300,
-            color: myColor[index],
-          ),
-        ),
-      ),
+          body: ListView(
+            children: myList,
+          )),
     );
   }
 }
