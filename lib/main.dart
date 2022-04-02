@@ -12,23 +12,21 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Column"),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        body: Stack(
           children: [
             Container(
-              width: 200,
-              height: 50,
+              width: 400,
+              height: 400,
               color: Colors.green,
             ),
             Container(
-              width: 50,
-              height: 50,
+              width: 300,
+              height: 300,
               color: Colors.blue,
             ),
             Container(
-              width: 50,
-              height: 50,
+              width: 200,
+              height: 200,
               color: Colors.red,
             )
           ],
