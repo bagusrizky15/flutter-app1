@@ -8,24 +8,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("hola"),
+          title: Text("image"),
         ),
-        body: ListView(
-          children: [
-            ListTile(
-              contentPadding: EdgeInsets.symmetric(horizontal: 20),
-              title: Text("Saeful"),
-              subtitle: Text(
-                "this is subtitle kdsahhdsadkjakdnsadjnjsdahjdhsajjsdajdhajsdhaj",
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
-              leading: CircleAvatar(),
-              trailing: Text("10.00 PM"),
-            )
-          ],
+        body: Center(
+          child: Container(
+            width: 300,
+            height: 300,
+            color: Colors.blue,
+            child: Image(
+              fit: BoxFit.cover,
+              image: AssetImage("images/profil.png"),
+            ),
+          ),
         ),
       ),
     );
